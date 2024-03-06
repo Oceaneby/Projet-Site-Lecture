@@ -1,0 +1,159 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    background-color: rgb(69, 53, 53);
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    padding: 100px 0px;
+    background: url("imgs/Livre automne.jpg");
+    background-size: 300px;
+}
+header h1{
+    color: rgb(254, 250, 253);
+    font-family: "Courgette", cursive;
+    font-style: normal;
+    font-weight: 400;
+    
+    font-size: 75px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px;
+    bottom: 350px;
+    width: 50%;
+    float: left;
+}
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #c5c5c5;
+    border-top: 2px solid #aaa;
+}
+nav{
+    width: 100%;
+    background-color: #724b4b;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #fff;
+}
+nav > ul > li:hover a{
+    padding: 10px 25px 20px 20px;
+}
+nav li{
+    list-style-type: none;
+}
+.submenu{
+    display: none;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 0px 10px;
+    height: 25px;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 11px;
+    color: #222538;
+    width: 170px;
+}
+.menu-accueil:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-uni:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}  
+.menu-liv:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-con:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-uni .submenu{
+    background-color: rgb(212, 119, 166) ;
+}
+.menu-liv .submenu{
+    background-color:rgb(212, 119, 166);
+}
+.submenu li:hover a{
+    color: #eee;
+    font-weight: bold;
+}
+.menu-uni .submenu li:hover{
+    background-color: rgb(154, 0, 77);
+}
+.menu-liv .submenu li:hover{
+    background-color: rgb(154, 0, 77);
+}
+label{
+    color: #ea6e26;
+    font-size: 15px;
+}
+textarea{
+    position: relative;
+    font-size: larger;  
+}
+input[type="submit"]{
+    position: absolute;
+   
+  margin: 0px 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.me-contacter{
+    margin: 15px;
+    text-align: center;
+}
+@media screen and (max-width: 780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px ;
+    }
+}

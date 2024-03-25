@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(69,53,53,0.5)50%, rgba(69,53,53,0.5)50%), url("imgs/Livre\ automne.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navb{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #c5c5c5;
+    border-top: 2px solid #aaa;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.navb, .logo{
+    color: rgb(254, 250, 253);
+    font-size: 25px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("imgs/Lune7.jpg");
+    background-position: 210px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+    
+}
+
+.menu{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+.menu > ul{
+    position: relative;
+    left: 400px;
+    margin: 0px;
+    padding: 10px;
+}
+.menu > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu > ul > li{
+    float: left;
+    position: relative;
+}
+.menu > ul > li > a{
+    padding: 20px 20px;
+    color: #fff;
+}
+.menu > ul > li:hover a{
+    padding: 10px 25px 20px 20px;
+}
+.menu li{
+    list-style-type: none;
+}
+.submenu{
+    display: none;
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+.menu li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    border-bottom: 1px solid #ccc;
+    padding: 0px 0px 10px;
+    height: 25px;
+    
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 11px;
+    color: #222538;
+    width: 170px;
+    
+}
+.menu-acceuil:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-uni:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}  
+.menu-liv:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-con:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-avis:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220,20,60,0.15);
+}
+.menu-uni .submenu{
+    background-color: rgb(212, 119, 166);
+}
+.menu-liv .submenu{
+    background-color:rgb(212, 119, 166);
+}
+.submenu li:hover a{
+    color: #eee;
+    font-weight: bold;
+}
+.menu-uni .submenu li:hover{
+    background-color: rgb(154, 0, 77);
+}
+.menu-liv .submenu li:hover{
+    background-color: rgb(154, 0, 77);
+}
+.search{
+    position: relative;
+    width: 330px;
+    float: left;
+    bottom: 90px;
+    padding: 10px;
+    margin-left: 1140px;
+    color: #fff;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #edc592;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff9e1e;
+    border: #ff9e1e;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+section{
+    width: 100%;
+    min-height: 500px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.center{
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+.left{
+    float: left;
+    left: 100px;
+    width: 50%;
+    position: relative;
+    left: 20px;
+}
+.right{
+    float: left;
+    width: 30%;
+}
+
+.Les-Avis > .center > h1{
+    width: 1200px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#fff;
+}
+.etoile{
+    font-size: 18px;
+}
+.sec::after, .avis1::after, .event::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.avis1 > .right{
+    float: right;
+    font-size: 18px;
+
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.sec > .left{
+    font-size: 18px;
+    display: inline-block;
+    padding-block: 30px;
+    text-align: center;
+
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 10px;
+    bottom: -60px;
+}
+p{
+    padding-right: 20px;
+}
+h1{
+    position: relative;
+    bottom: -40px;
+    float: left;
+    left: 100px;
+    color: #fff;
+    font-size: 30px;
+}
+h2{
+    color: rgb(237, 115, 34);
+}
+.gotopbtn{
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:#fff;
+    bottom: 50px;
+    border-radius: 50%;
+    
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px ;
+    color: #ff9e1e;
+    font-size: 40px;
+}

@@ -1,29 +1,18 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    background-color: rgb(69, 53, 53);
-    background-size: 100%;
+*{
     margin: 0px;
     padding: 0px;
 }
-header{
+.main{
     width: 100%;
-    padding: 100px 0px;
-    background: url("imgs/Livre automne.jpg");
-    background-size: 300px;
+    background: linear-gradient(to top, rgba(69,53,53,0.5)50%, rgba(69,53,53,0.5)50%), url("imgs/Livre\ automne.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
 }
-header h1{
-    color: rgb(254, 250, 253);
-    font-family: "Courgette", cursive;
-    font-style: normal;
-    font-weight: 400;
-    
-    font-size: 75px;
-    font-variant: small-caps;
-    text-shadow: 2px 2px 4px;
-    bottom: 350px;
-    width: 50%;
-    float: left;
+.navb{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
 }
 footer{
     height: 80px;
@@ -32,38 +21,60 @@ footer{
     background-color: #c5c5c5;
     border-top: 2px solid #aaa;
 }
-nav{
-    width: 100%;
-    background-color: #724b4b;
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.navb, .logo{
+    color: rgb(254, 250, 253);
+    font-size: 25px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("imgs/Lune7.jpg");
+    background-position: 210px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+    
 }
 
-nav > ul{
-    margin: 0px;
-    padding: 0px;
+.menu{
+    width: 100%;
+    margin: auto;
+    position: absolute;
 }
-nav > ul::after{
+.menu > ul{
+    position: relative;
+    left: 400px;
+    margin: 0px;
+    padding: 10px;
+}
+.menu > ul::after{
     content: "";
     display: block;
     clear: both;
 }
-nav > ul > li{
+.menu > ul > li{
     float: left;
     position: relative;
 }
-nav > ul > li > a{
-    padding: 20px 30px;
+.menu > ul > li > a{
+    padding: 20px 20px;
     color: #fff;
 }
-nav > ul > li:hover a{
+.menu > ul > li:hover a{
     padding: 10px 25px 20px 20px;
 }
-nav li{
+.menu li{
     list-style-type: none;
 }
 .submenu{
     display: none;
 }
-nav a{
+.menu a{
     display: inline-block;
     text-decoration: none;
     padding: 20px 30px;
@@ -71,7 +82,7 @@ nav a{
     font-size: 15px;
 
 }
-nav li:hover .submenu{
+.menu li:hover .submenu{
     display: inline-block;
     position: absolute;
     top: 100%;
@@ -83,14 +94,16 @@ nav li:hover .submenu{
     border-bottom: 1px solid #ccc;
     padding: 0px 0px 10px;
     height: 25px;
+    
 }
 .submenu li a{
     padding: 15px 30px;
     font-size: 11px;
     color: #222538;
     width: 170px;
+    
 }
-.menu-accueil:hover{
+.menu-acceuil:hover{
     border-top: 5px solid #2c2424;
     background-color: rgba(220, 20, 60, 0.15);
 }
@@ -106,8 +119,12 @@ nav li:hover .submenu{
     border-top: 5px solid #2c2424;
     background-color: rgba(220, 20, 60, 0.15);
 }
+.menu-avis:hover{
+    border-top: 5px solid #2c2424;
+    background-color: rgba(220,20,60,0.15);
+}
 .menu-uni .submenu{
-    background-color: rgb(212, 119, 166) ;
+    background-color: rgb(212, 119, 166);
 }
 .menu-liv .submenu{
     background-color:rgb(212, 119, 166);
@@ -122,25 +139,199 @@ nav li:hover .submenu{
 .menu-liv .submenu li:hover{
     background-color: rgb(154, 0, 77);
 }
-label{
-    color: #ea6e26;
-    font-size: 15px;
-}
-textarea{
+.search{
     position: relative;
-    font-size: larger;  
-}
-input[type="submit"]{
-    position: absolute;
-   
-  margin: 0px 10px;
+    width: 330px;
+    float: left;
+    bottom: 90px;
     padding: 10px;
-    font-size: 15px;
+    margin-left: 1140px;
+    color: #fff;
 }
-.me-contacter{
-    margin: 15px;
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #edc592;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff9e1e;
+    border: #ff9e1e;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.bvn{
+    float: left;
+    padding-left: 50px;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cnt{
+    width: 160px;
+    height: 40px;
+    background: #ff9e1e;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content .cnt a{
+    text-decoration: none;
+    color: #000000;
+    transition: .3s ease;
+}
+.cnt:hover{
+    background-color: #fff;
+}
+.content span{
+    color: #ff9e1e;
+    font-size: 60px;
+}
+.form{
+    width: 250px;
+    height: 510px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 700px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form h2{
+    width: 220px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #ff9e1e;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff9e1e;
+    border-top: none;
+    border-right: none;
+    color: #fff;
+    font: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff9e1e;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff9e1e;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.form .comp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
     text-align: center;
 }
+.form .comp a{
+    text-decoration: none;
+    color: #ff9e1e;
+}
+.res{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+.icons ion-icon{
+    color: #fff;
+    padding-left: 18px;
+    padding-top: 10px;
+    transition: 0.3s ease;
+}
+.gotopbtn{
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color:#fff;
+    bottom: 50px;
+    border-radius: 50%;
+    
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px ;
+    color: #ff9e1e;
+    font-size: 40px;
+}
+
 @media screen and (max-width: 780px){
     header{
         height: 50px;

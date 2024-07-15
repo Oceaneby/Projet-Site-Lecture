@@ -2,6 +2,33 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    cursor: none;
+}
+.mouse{
+    position: absolute;
+    border-radius: 1500px;
+    transform: translate(-50%, -50%);
+    
+}
+#cursor{
+    background: #edc592;
+    width: 20px;
+    height: 20px;
+}
+#mouse1{
+    height: 100px;
+    width: 100px;
+    background: #f89d27;
+    transition: 0.10s ease-out;
+}
+#mouse2{
+    height: 150px;
+    width: 150px;
+    background: rgba(78, 44, 44, 0.789);
+    
+    transition: 0.25s ease-out;
+}
 .main{
     width: 100%;
     background: linear-gradient(to top, rgba(69,53,53,0.5)50%, rgba(69,53,53,0.5)50%), url("imgs/Livre\ automne.jpg");

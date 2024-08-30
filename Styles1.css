@@ -53,14 +53,7 @@ footer{
     height: 70px;
 }
 .navb, .logo{
-    color: rgb(254, 250, 253);
-    font-size: 25px;
-    font-family: "Courgette", cursive;
-    font-weight: 400;
-    font-style: normal;
-    
-    background-position: 210px;
-    background-repeat: no-repeat;
+   
     padding-left: 10px;
     float: left;
     padding-top: 10px;

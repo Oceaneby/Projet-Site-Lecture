@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    cursor: none;
+    background: linear-gradient(to top, rgba(69,53,53,0.5)50%, rgba(69,53,53,0.5)50%), url("imgs/Livre\ automne.jpg") fixed center/cover;
 }
 .mouse{
     position: absolute;
@@ -31,9 +31,7 @@ body{
 }
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(69,53,53,0.5)50%, rgba(69,53,53,0.5)50%), url("imgs/Livre\ automne.jpg");
-    background-position: center;
-    background-size: cover;
+   
     height: 109vh;
 }
 .navb{
@@ -59,7 +57,7 @@ footer{
     font-family: "Courgette", cursive;
     font-weight: 400;
     font-style: normal;
-    background-image: url("imgs/Lune7.jpg");
+   
     background-position: 210px;
     background-repeat: no-repeat;
     padding-left: 10px;
@@ -69,7 +67,7 @@ footer{
 }
 
 .menu{
-    width: 100%;
+    width: 50%;
     margin: auto;
     position: absolute;
 }

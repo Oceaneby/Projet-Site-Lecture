@@ -3,6 +3,7 @@
     padding: 0px;
 }
 body{
+    cursor: none;
    background: linear-gradient(to top, rgba(69,53,53,0.5)50%, rgba(69,53,53,0.5)50%), url("imgs/Livre\ automne.jpg") fixed center/cover;
 }
 .mouse{

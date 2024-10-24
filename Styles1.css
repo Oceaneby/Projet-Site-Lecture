@@ -40,13 +40,13 @@ body{
     height: 75px;
     margin: auto;
 }
-footer{
+/* footer{
     height: 80px;
     padding-top: 30px;
     text-align: center;
     background-color: #c5c5c5;
     border-top: 2px solid #aaa;
-}
+} */
 .icon{
     width: 200px;
     float: left;
@@ -349,4 +349,11 @@ footer{
     line-height: 50px ;
     color: #ff9e1e;
     font-size: 40px;
+}
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #f8dec0;
+    border-top: 2px solid #f8dec0;
 }
